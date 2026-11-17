@@ -1,0 +1,43 @@
+﻿{
+  "name": "md-memory",
+  "version": "0.1.0",
+  "description": "把本地 Markdown 变成 AI 助手（DSH）的常驻记忆：规则每轮全量注入 + 按关键词指路。不存储、不提炼、不检索正文。目前只在 DSH 上验证过。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "test-offline.mjs",
+    "test-fixtures",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "memory",
+    "markdown",
+    "agents-md",
+    "context"
+  ],
+  "license": "MIT",
+  "author": "md-memory maintainers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sky-lll27/md-memory.git"
+  },
+  "homepage": "https://github.com/Sky-lll27/md-memory#readme",
+  "bugs": {
+    "url": "https://github.com/Sky-lll27/md-memory/issues"
+  }
+}
